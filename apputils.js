@@ -80,7 +80,8 @@ var onTwitterFeed = function(data) {
   
   db.containsTwitter(twitter, function (contains) {
     if(!contains) {
-      log("Denying re-super request from @" + twitter + " (Not in database)");
+      log("Denying re-super request from @" + twitter + ". Username is not in the database!" + moment().format("(DD MMM HH:mm:ss)")");
+      tweet("Denying re-super request from @" + twitter + ". Username is not in the database!" + moment().format("(DD MMM HH:mm:ss)")");
       return;
     }
     var player = db.getPlayer(twitter, function(player) {
