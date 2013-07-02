@@ -1,9 +1,6 @@
 TwitterBot
 ==========
 
-TwitterBot
-==========
-
 This is the Git Repo for the TotalFreedom version of Twitterbot.
 
 This twitterbot will inform the owner and a set of senior admins should TotalFreedom Minecraft server be offline for any reason.
